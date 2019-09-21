@@ -1,0 +1,85 @@
+body{
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+
+  
+  position: relative;
+ 
+}
+.container{
+  background: #fff;
+  margin-top: 70px;
+  width: 500px;
+  height: 450px;
+}
+
+
+
+.clockContainer{
+  position: absolute;
+  top:50px; left:-30px; bottom:0; right:0; margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid transparent;
+}
+
+.clockOut{
+  width: 200px;
+  height: 200px;
+  border: 12px solid lightblue;
+  border-radius: 100%;
+  position: absolute;
+  bottom:0;
+  margin-left: auto; margin-right: auto; left:0; right:0;
+}
+
+.clockTop{
+  border-top: 12px solid lightblue;
+   border-right: 12px solid lightblue;
+   border-left: 12px solid lightblue;
+  width: 100px;
+  top: -100px;
+  left: 50px;
+
+  position: absolute;
+  margin-right: auto; 
+  height: 28px;
+  border-radius: 30px;
+}
+
+.clockNeedle{
+  width: 100px;
+  height: 5px;
+  background: lightblue;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform-origin:100% 50%;
+  
+  animation: needleAnimation 3s linear 0s infinite;
+}
+.clockContainer:hover .clockNeedle{
+  
+  animation: none;
+
+ 
+}
+
+@keyframes needleAnimation {
+   from {
+
+      
+    }
+    to {
+      transform:rotate(360deg); 
+  }
+}
+@keyframes stop {
+   from {
+      
+    }
+    to {
+      transform:rotate(); 
+  }
+}

@@ -1,0 +1,37 @@
+body{
+	background: #000;
+	}
+
+@keyframes bounce{
+			
+			0%{ font-size: 0px; }
+			50%{font-size: 90px; }
+			100%{font-size: 80px; }
+			
+		} 
+		div{
+			font-size: 80px;
+		
+			  animation: bounce 1.5s ;
+  			
+  			text-align: center;
+  			
+  			animation-timing-function: ease-out;
+  			color: blue;
+  	}
+  			 
+
+		
+		.external{
+		
+			display: flex;
+			justify-content: center;
+			margin-top: 120px;
+
+		}
+		.inner{
+			background: #fff;
+			height: 250px;
+			width: 500px;
+			padding-top: 120px;
+		}

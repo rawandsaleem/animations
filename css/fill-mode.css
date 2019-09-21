@@ -1,0 +1,71 @@
+body{
+	background-color: #000;
+	}
+@keyframes mode{
+			
+	to{ transform: scale(1.2);}
+			
+	}
+
+article{
+	
+	display: flex;
+	justify-content: center;
+}
+h1{
+	color: grey;
+}
+
+.wi{
+	width: 600px;
+	height: 70px;
+	color: #fff;
+	font-size: 30px;
+	border-radius: 10px;
+	padding-top: 30px;
+	margin-left: 50px;
+	
+	}
+
+#div1{
+	background: blue;
+
+}
+#div2{
+	background: orange;
+
+}
+					
+			
+.container{
+	background-color: #fff;
+	width: 700px;
+	height: 200px;
+	
+	width: 700px;
+	height: 400px;
+	margin: 200px;
+	margin-left: 300px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+		}
+
+.hov:hover #div1{
+		
+	animation-fill-mode:forwards;
+
+	animation-name: mode;
+	animation-duration: 1.5s;
+	}
+
+ .hov:hover #div2{
+	animation-name: mode;
+	animation-duration: 1.5s;
+	animation-fill-mode: backwards;
+
+			
+
+		}
