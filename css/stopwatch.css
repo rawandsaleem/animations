@@ -57,11 +57,12 @@ body{
   left: 0px;
   transform-origin:100% 50%;
   
-  animation: needleAnimation 3s linear 0s infinite;
+  animation: needleAnimation 3s linear 0s infinite ;
+  animation-fill-mode: forwards;
 }
 .clockContainer:hover .clockNeedle{
   
-  animation: none;
+  animation-play-state: paused;
 
  
 }
